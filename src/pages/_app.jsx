@@ -1,6 +1,6 @@
-import '../style/global.scss';
-import '../style/component/header.scss';
-import '../style/component/footer.scss';
+import '../styles/globals.scss';
+import '../styles/components/Header.scss';
+import '../styles/components/Footer.scss';
 import { Shantell_Sans } from '@next/font/google';
 import ContainerMain from '../layouts/container-main';
 const shantell_Sans = Shantell_Sans({
