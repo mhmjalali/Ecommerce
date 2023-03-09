@@ -1,4 +1,4 @@
-****// dependencies of project //*****
+****// dependencies of project //****
 1-) npx create-next-app@latest
 2-) npm install @reduxjs/toolkit
 3-) npm install -g sass
