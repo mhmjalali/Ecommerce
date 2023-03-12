@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 .body-component {
-  height: calc(100vh - (65px + 35px));
+  height: calc(100vh - 65px);
   &::-webkit-scrollbar {
     width: 6px;
   }

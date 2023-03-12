@@ -1,15 +1,18 @@
+@import "../layouts/variables";
+
 .header {
-    background: #0E8388;
+    background: #fff;
     height: 65px;
     padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     .logo {
         font-size: 20px;
         font-weight: 600;
-        color: #bea714f3;
+        color: $blue-text-color;
     }
     .profile {
         font-size: 30px;
-        color: #F7F1E5;
+        color: $blue-text-color;
         cursor: pointer;
         &:hover {
             color: #9fb5b0;
@@ -24,11 +27,14 @@
             margin: 0 10px;
             font-size: 15px;
             font-weight: 500;
-            color: #F7F1E5;
+            color: $blue-text-color;
             cursor: pointer;
             &:hover {
                 color: #9fb5b0;
             }
         }
+    }
+    .pipeLine {
+        @include pipeLine;
     }
 }
