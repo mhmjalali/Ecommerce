@@ -1,17 +1,18 @@
 .header {
-    background: #40513B;
-    padding: 20px;
+    background: #0E8388;
+    height: 65px;
+    padding: 0 20px;
     .logo {
         font-size: 20px;
         font-weight: 600;
-        color: #E7B10A;
+        color: #bea714f3;
     }
     .profile {
         font-size: 30px;
         color: #F7F1E5;
         cursor: pointer;
         &:hover {
-            color: #E7B10A;
+            color: #9fb5b0;
         }
     }
     .headr-items-list {
@@ -22,10 +23,11 @@
         .header-item {
             margin: 0 10px;
             font-size: 15px;
+            font-weight: 500;
             color: #F7F1E5;
             cursor: pointer;
             &:hover {
-                color: #E7B10A;
+                color: #9fb5b0;
             }
         }
     }
