@@ -18,6 +18,14 @@
             color: #9fb5b0;
         }
     }
+    .about-me {
+        font-size: 30px;
+        color: $blue-text-color;
+        cursor: pointer;
+        &:hover {
+            color: #9fb5b0;
+        }
+    }
     .headr-items-list {
         list-style-type: none;
         display: flex;

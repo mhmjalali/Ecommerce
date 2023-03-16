@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Box, Tooltip } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
@@ -11,9 +12,8 @@ const Header = () => {
                     <div>COMMERCE</div>
                 </Box>
                 <ul className="headr-items-list">
-                    <li className="header-item">HOME</li>
+                    <Link href={"/"}><li className="header-item">HOME</li></Link>
                     <li className="header-item">PRODUCTS</li>
-                    <li className="header-item">ABOUT US</li>
                 </ul>
             </Box>
             <Box sx={{display: 'flex'}}>
@@ -21,9 +21,11 @@ const Header = () => {
                     <AccountCircleIcon className="profile" />
                 </Tooltip>
                 <div className="pipeLine"></div>
-                <Tooltip sx={{margin: '0 0.6rem'}} title="About Me" placement="bottom">
-                    <FingerprintIcon className="profile" />
-                </Tooltip>
+                <Link href={"./aboutMe"}>
+                    <Tooltip sx={{margin: '0 0.6rem'}} title="About Me" placement="bottom">
+                        <FingerprintIcon className="about-me" />
+                    </Tooltip>
+                </Link>
             </Box>
         </Box>
     );  

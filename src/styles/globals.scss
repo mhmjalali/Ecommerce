@@ -7,14 +7,17 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-}
-.body-component {
-  height: calc(100vh - 65px);
-  &::-webkit-scrollbar {
-    width: 6px;
+  a {
+    text-decoration: none;
   }
-  &::-webkit-scrollbar-thumb {
-    background: #0E8388;
-    border-radius: 5px;
+  .body-component {
+    height: calc(100vh - 65px);
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #0E8388;
+      border-radius: 5px;
+    }
   }
 }
