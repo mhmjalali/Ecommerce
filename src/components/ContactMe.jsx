@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-const ResContactMe = () => {
+const ContactMe = () => {
     return ( 
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Tooltip title="my Instagram" placement="bottom">
@@ -22,4 +22,4 @@ const ResContactMe = () => {
      );
 }
  
-export default ResContactMe;
+export default ContactMe;
