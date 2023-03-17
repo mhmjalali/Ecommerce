@@ -12,6 +12,8 @@ body {
   }
   .body-component {
     height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
     &::-webkit-scrollbar {
       width: 6px;
     }

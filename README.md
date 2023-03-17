@@ -6,3 +6,4 @@
 5-) npm install @mui/icons-material
 6-) npm install @next/font
 7-) npm install axios
+8-) npm i nextjs-progressbar

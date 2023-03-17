@@ -1,13 +1,18 @@
 import  MyCV  from "@/components/MyCV";
-import ContactMe from "@/components/ContactMe";
 import { Box } from "@mui/material";
 
+const body_style = {
+    overflowY: 'auto', 
+    display: 'flex', 
+    justifyContent: 'center',
+}
 const aboutMe = () => {
     return ( 
-        <Box sx={{ overflowY: 'scroll' }} className="body-component">
-            <MyCV />
-            <ContactMe />
-        </Box>   
+        <Box sx={ body_style }>
+            <Box maxWidth="lg" className="body-component">
+                <MyCV />
+            </Box>
+        </Box>
     );
 }
  
