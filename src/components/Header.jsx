@@ -13,7 +13,7 @@ const Header = () => {
                 </Box>
                 <ul className="headr-items-list">
                     <Link href={"/"}><li className="header-item">HOME</li></Link>
-                    <li className="header-item">PRODUCTS</li>
+                    <Link href={"./products"}><li className="header-item">PRODUCTS</li></Link>
                 </ul>
             </Box>
             <Box sx={{display: 'flex'}}>

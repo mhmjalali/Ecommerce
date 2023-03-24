@@ -1,4 +1,9 @@
 $blue-text-color: rgba(192, 47, 119, 0.95);
+$layout-breakpoint-xs: 0px;
+$layout-breakpoint-sm: 600px;
+$layout-breakpoint-md: 900px;
+$layout-breakpoint-lg: 1200px;
+$layout-breakpoint-xl: 1536px;
 @mixin pipeLine {
     width: 1px;
     background: #e1e1e1;

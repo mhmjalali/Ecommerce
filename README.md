@@ -5,5 +5,6 @@
 4-) npm install @mui/material @emotion/react @emotion/styled
 5-) npm install @mui/icons-material
 6-) npm install @next/font
-7-) npm install axios
 8-) npm i nextjs-progressbar
+7-) npm install axios
+9-) npm i swr

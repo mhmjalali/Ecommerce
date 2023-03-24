@@ -1,19 +1,19 @@
-import  MyCV  from "@/components/aboutMe/MyCV";
+import ProductList from "@/components/products/ProductList"
 import { Box } from "@mui/material";
 
 const body_style = {
-    overflowY: 'auto', 
-    display: 'flex', 
+    overflowY: 'auto',
+    display: 'flex',
     justifyContent: 'center',
 }
-const aboutMe = () => {
+const products = () => {
     return ( 
         <Box sx={ body_style }>
             <Box maxWidth="lg" className="body-component">
-                <MyCV />
+                <ProductList />
             </Box>
         </Box>
     );
 }
  
-export default aboutMe;
+export default products;
