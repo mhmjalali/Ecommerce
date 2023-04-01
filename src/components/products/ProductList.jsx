@@ -1,6 +1,7 @@
 import axios from "axios";
 import useSWR from "swr";
 import { Box } from "@mui/material";
+import Product from "./Product";
 
 const fetcher = (...args) => axios.get(args).then(res => res.data)
 
@@ -13,9 +14,7 @@ const ProductList = () => {
         <Box>
             {
                 data.map(item => (
-                    <div>
-                        <div>{item.id}</div>
-                    </div>
+                    <Product key={item.id} item={ item }/>
                 ))
             }
         </Box>

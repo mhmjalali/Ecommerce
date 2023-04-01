@@ -1,25 +1,25 @@
 @import "../layouts/variables";
 @media (min-width: $layout-breakpoint-xs) {
-    .cv-image {
+    .cv_image {
         display: none;
     }
-    .xs-sm {
+    .xs_sm {
         display: flex;   
     }
-    .sm-over {
+    .sm_over {
         display: none;
     }
 }
 @media (min-width: $layout-breakpoint-sm) {
-    .xs-sm {
+    .xs_sm {
         display: none;
     }
-    .sm-over {
+    .sm_over {
         display: unset;
     }
 }
 @media (min-width: $layout-breakpoint-md) {
-    .cv-image {
+    .cv_image {
         display: unset;
         width: 300px;
         height: 500px;
@@ -28,10 +28,10 @@
         border-bottom-right-radius: 25px;
     }
 }
-.text-yellow {
+.text_yellow {
     color: #d0c248;
     margin-right: 10px;
 }
-.text-center {
+.text_center {
     text-align: center;
 }
