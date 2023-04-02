@@ -6,7 +6,7 @@ import cvImage from '../../../public/cvImage.jpg';
 import styles from '../../styles/components/MyCV.module.scss';
 const MyCV = () => {
     return ( 
-        <Box sx={{display: { md: "flex" }, justifyContent: 'between', alignItems: 'center', mx: '1rem' }}>
+        <Box sx={{display: { md: "flex" }, justifyContent: 'between', alignItems: 'center', mx: '1rem', height: '100%' }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Image className={styles.cv_image} src={ cvImage } alt="" />
             </Box>
