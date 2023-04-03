@@ -1,19 +1,22 @@
-import { Box, Paper } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 import styles from '../../styles/components/product.module.scss';
-import { styled } from '@mui/material/styles';
-const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
 const Product = ({item}) => {
     return ( 
-        <Item item xs={4} item-key={item.id}>
-            {/* <h3>{ item.title }</h3>
-            <h5>{ item.description }</h5> */}
-            <h5>{ item.price }</h5>
-        </Item>
+        <Box>
+            <Box className={styles.product_image} component="img" src={ item.image } sx={{ maxHeight: { xs: 233, md: 167 }, maxWidth: { xs: 350, md: 250 } }} />
+            <Box sx={{display: "flex", flexDirection: "column", alignItems: "start"}}>
+                <Tooltip title={ item.title } placement="right">
+                    <Box sx={{ display: "flex" }}>
+                        <h4 className={ styles.ask }>Product:</h4>
+                        <h4 className={ styles.product_title }>{ item.title }</h4>
+                    </Box>
+                </Tooltip>
+                <Box sx={{ display: "flex" }}>
+                    <h4 className={ styles.ask }>Price:</h4>
+                    <h4 className={ styles.product_price }>{ item.price }$</h4>
+                </Box>
+            </Box>
+        </Box>
     );
 }
  

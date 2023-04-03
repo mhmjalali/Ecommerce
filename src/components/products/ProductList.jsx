@@ -1,23 +1,28 @@
 import axios from "axios";
 import useSWR from "swr";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Paper } from "@mui/material";
 import Product from "./Product";
+import { styled } from '@mui/material/styles';
+import styles from '../../styles/components/product.module.scss';
 
-const fetcher = (...args) => axios.get(args).then(res => res.data)
+const getProductData = (...args) => axios.get(args).then(res => res.data);
 
-const productsContainer_style = {
-    display: 'flex',
-    flexGrow: 1
-}
+const Item = styled(Paper)(({ theme }) => ({
+    padding: theme.spacing(1),
+    boxShadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;",
+    height: '100%',
+    textAlign: 'center',
+}));
+
 const ProductList = () => {
-    const {data, error} = useSWR("https://fakestoreapi.com/products", fetcher);
+    const {data, error} = useSWR("https://fakestoreapi.com/products", getProductData);
     if (error) return <div>Error</div>
     if (!data) return <div>Loading...</div>
 
     return (
-        <Box sx={productsContainer_style}>
-            <Grid container spacing={1}>
-                { data.map(item => ( <Product key={item.id} item={ item }/> )) }
+        <Box sx={{ flexGrow: 1 }}>
+            <Grid sx={{my: "2rem", alignItems: "inherit"}} container spacing={2}>
+                { data.map(item => ( <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}><Item className={styles.product_box}><Product item={ item }/></Item></Grid> )) }
             </Grid>
         </Box>
     );

@@ -1,0 +1,27 @@
+@import "../layouts/variables";
+.product_box {
+    .product_image {
+        transition: 0.5s all;
+    }
+    cursor: pointer;
+    &:hover {
+        .product_image {
+            filter: blur(5px);
+        }
+    }
+    .ask {
+        color: $product-first-text-color;
+    }
+    .product_title {
+        color: $product-second-text-color;
+        width: 150px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0 5px;
+    }
+    .product_price {
+        color: $product-second-text-color;
+        margin: 0 5px;
+    }
+}

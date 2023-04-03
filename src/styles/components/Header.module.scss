@@ -8,11 +8,11 @@
     .logo {
         font-size: 20px;
         font-weight: 600;
-        color: $blue-text-color;
+        color: $header-text-color;
     }
     .profile {
         font-size: 30px;
-        color: $blue-text-color;
+        color: $header-text-color;
         cursor: pointer;
         &:hover {
             color: #9fb5b0;
@@ -20,7 +20,7 @@
     }
     .about_me {
         font-size: 30px;
-        color: $blue-text-color;
+        color: $header-text-color;
         cursor: pointer;
         &:hover {
             color: #9fb5b0;
@@ -35,7 +35,7 @@
             margin: 0 10px;
             font-size: 15px;
             font-weight: 500;
-            color: $blue-text-color;
+            color: $header-text-color;
             cursor: pointer;
             &:hover {
                 color: #9fb5b0;
