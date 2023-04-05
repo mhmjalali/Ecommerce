@@ -21,7 +21,7 @@ const ProductList = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid sx={{my: "2rem", alignItems: "inherit"}} container spacing={2}>
+            <Grid sx={{py: "2rem", alignItems: "inherit"}} container spacing={2}>
                 { data.map(item => ( <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}><Item className={styles.product_box}><Product item={ item }/></Item></Grid> )) }
             </Grid>
         </Box>
