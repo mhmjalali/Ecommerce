@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Header from '@/components/mainComponents/Header';
 
 const ContainerMain = (props) => {
     return (

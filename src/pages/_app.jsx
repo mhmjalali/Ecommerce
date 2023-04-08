@@ -1,7 +1,7 @@
 import '@/styles/globals.scss';
 import NextNProgress from 'nextjs-progressbar';
 import { Shantell_Sans } from '@next/font/google';
-import ContainerMain from '../layouts/container-main';
+import ContainerMain from '@/layouts/container-main';
 
 const shantell_Sans = Shantell_Sans({ subsets: ['latin'], weight: ['400', '500', '600'] })
 export default function App({ Component, pageProps }) {
