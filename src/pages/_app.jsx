@@ -1,4 +1,5 @@
 import '@/styles/globals.scss';
+import '@/styles/components/mainComponents_Loading.scss';
 import NextNProgress from 'nextjs-progressbar';
 import { Shantell_Sans } from '@next/font/google';
 import ContainerMain from '@/layouts/container-main';

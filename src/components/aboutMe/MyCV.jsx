@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import ContactMe from "@/components/aboutMe/ContactMe";
 import SendIcon from '@mui/icons-material/Send';
 import cvImage from '../../../public/cvImage.jpg';
-import styles from '../../styles/components/MyCV.module.scss';
+import styles from '../../styles/components/aboutMe_MyCV.module.scss';
 const MyCV = () => {
     return ( 
         <Box sx={{display: { md: "flex" }, justifyContent: 'between', alignItems: 'center', mx: '1rem', height: '100%' }}>

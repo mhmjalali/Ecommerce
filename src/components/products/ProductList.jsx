@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { Box, Grid, Paper } from "@mui/material";
 import Product from "./Product";
 import { styled } from '@mui/material/styles';
-import styles from '@/styles/components/product.module.scss';
+import styles from '@/styles/components/products_product.module.scss';
 import Loading from '@/components/mainComponents/Loading';
 import Error from '@/components/mainComponents/Error';
 
@@ -19,9 +19,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const ProductList = () => {
     const router = useRouter();
-    const {data, isLoading , error} = useSWR("https://fakestoreapi.com/products", getProductData);
+    const {data, isLoading , error} = useSWR("https://fakestoreapi.com/product", getProductData);
     if (isLoading) return <Loading />
-    if (error) return <Error />
+    if (error) return <Loading />
 
     return (
         <Box sx={{ flexGrow: 1 }}>

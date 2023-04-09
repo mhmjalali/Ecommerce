@@ -1,5 +1,5 @@
 import { Box, Tooltip } from "@mui/material";
-import styles from '@/styles/components/product.module.scss';
+import styles from '@/styles/components/products_product.module.scss';
 const Product = ({item}) => {
     return ( 
         <Box>

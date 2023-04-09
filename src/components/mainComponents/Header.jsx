@@ -3,7 +3,7 @@ import { Box, Tooltip } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import styles from '@/styles/components/Header.module.scss';
+import styles from '@/styles/components/mainComponents_Header.module.scss';
 const Header = () => {
     return ( 
         <Box className={styles.header} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
